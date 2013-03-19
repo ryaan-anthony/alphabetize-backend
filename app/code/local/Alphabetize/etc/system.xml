@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config>
+	<sections>
+         <ip_section module="alphabetize">
+            <groups>
+                <ip_category translate="label comment" module="alphabetize">
+                    <label>Category Options</label>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+					<fields>
+                        <ip_alphabetize translate="label">
+                            <label>Alphabetize Categories in Backend?</label>
+                            <frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </ip_alphabetize>
+                    </fields>
+                </ip_category>
+            </groups>
+        </ip_section>
+    </sections>
+</config>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<config> 
+    <modules>
+        <Ip_Alphabetize>
+            <version>0.1.0</version>
+        </Ip_Alphabetize>
+    </modules> 
+    <global> 
+		<helpers>
+			<alphabetize>
+				<class>Ip_Alphabetize_Helper</class>
+			</alphabetize>
+		</helpers> 		
+        <blocks>
+			<adminhtml>			
+				<rewrite>
+					<catalog_category_tree>Ip_Alphabetize_Block_Manage_Categories</catalog_category_tree>
+					<catalog_product_edit_tab_categories>Ip_Alphabetize_Block_Manage_Products</catalog_product_edit_tab_categories>
+				</rewrite>
+			</adminhtml>
+        </blocks> 
+    </global>
+	<default>
+		<ip_section>
+			<ip_category>
+				<ip_alphabetize>1</ip_alphabetize>
+			</ip_category>
+		</ip_section>
+	</default>	
+</config>
